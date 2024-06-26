@@ -1,7 +1,10 @@
 import { getTranslations } from 'next-intl/server';
 
 import { CarouselMenu } from '@/components/CarouselMenu';
-import { HighlighBox } from '@/components/HighlightBox';
+import { HighlightBox } from '@/components/HighlightBox';
+import { HitTabs } from '@/components/HitTab';
+import { PickBox } from '@/components/PickBox';
+import { RealtimeBox } from '@/components/RealtimeBox';
 import { SearchBox } from '@/components/SearchBox';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
@@ -23,7 +26,12 @@ export default function Index() {
         <SearchBox />
       </div>
       <CarouselMenu />
-      <HighlighBox />
+      <HighlightBox />
+      <RealtimeBox />
+      <div className="flex">
+        <PickBox />
+        <HitTabs />
+      </div>
     </div>
   );
 }

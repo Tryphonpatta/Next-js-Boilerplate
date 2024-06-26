@@ -19,7 +19,7 @@ const UserButton = () => {
         type="button"
         aria-label="User Button"
       >
-        <div className=" cursor-pointer rounded-full hover:bg-gray-300">
+        <div className=" mr-3 cursor-pointer rounded-full hover:bg-gray-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -37,7 +37,7 @@ const UserButton = () => {
         </div>
       </button>
       <Modal
-        title="Basic Modal"
+        title="Login User Modal"
         open={showModal}
         footer={[]}
         onCancel={handleCancel}

@@ -10,9 +10,9 @@ const BaseTemplate = (props: {
   const t = useTranslations('BaseTemplate');
 
   return (
-    <div className="w-full px-1 text-gray-700 antialiased">
-      <div className="mx-auto ">
-        <header className="border-b border-gray-300">
+    <div className=" w-full px-1 text-gray-700 antialiased ">
+      <div className="mx-auto overflow-x-hidden md:max-w-full">
+        <header className=" hidden border-b border-gray-300 md:block">
           <div className="flex items-center justify-between">
             <nav>
               <div>
@@ -24,7 +24,7 @@ const BaseTemplate = (props: {
               </div>
             </nav>
             <nav>
-              <ul className="flex flex-wrap gap-x-10 text-xl">
+              <ul className="flex flex-wrap gap-x-14 text-xl">
                 {props.leftNav}
               </ul>
             </nav>

@@ -26,7 +26,7 @@ const SearchBox = () => {
       }
       value={search}
       onChange={(e) => setSearch(e.target.value)}
-      className="w-96"
+      className="md:w-72 lg:w-96"
     />
   );
 };
